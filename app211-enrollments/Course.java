@@ -7,7 +7,7 @@ import java.util.*;
  * @author Derek Peacock
  * @version 1.0 14/07/2021
  */
-public class Course
+public class Course 
 {
     // A unique identifier e.g. BT1CTG1
     private String code;
