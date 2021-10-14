@@ -1,3 +1,0 @@
-Student Amir = new Student("Amir", 21911096);
-Amir.print();
- Student ID: 21911096 Name: Amir
