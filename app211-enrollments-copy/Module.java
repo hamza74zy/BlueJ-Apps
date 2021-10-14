@@ -1,7 +1,6 @@
  
 /**
- * This class represents a course module and contains 
- * information on the module title and code.
+ * Write a description of class Module here.
  *
  * @author Amir Hamza
  * @version 15/10/2021
@@ -21,7 +20,7 @@ public class Module
         // initialise instance variables
         this.code = code;
         this.title = title;
-        credit = 15;
+        credit = 0;
     }
 
     /**
