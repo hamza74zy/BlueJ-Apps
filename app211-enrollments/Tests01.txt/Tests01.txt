@@ -6,6 +6,14 @@ computing.print();
 
  Course Code: BT1CTG1: BSc Computing
 
-Student student = new Student("Amir Hamza", 21911096);
-student.print();
- Student ID: 21911096 Name: Amir Hamza
+Student student1 = new Student("Mohammad Amir", 21911096);
+student1.print();
+ Student ID: 21911096 Name: Mohammad Amir
+student1.enrol(computing);
+student1.printCourse();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CTG1: BSc Computing
+
