@@ -1,0 +1,11 @@
+Course computing = new Course("BT1CTG1", "BSc Computing");
+computing.print();
+ --------------------------------
+   App211: Course Details
+ --------------------------------
+
+ Course Code: BT1CTG1: BSc Computing
+
+Student student = new Student("Amir Hamza", 21911096);
+student.print();
+ Student ID: 21911096 Name: Amir Hamza
