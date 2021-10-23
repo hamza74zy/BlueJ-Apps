@@ -8,7 +8,7 @@
  */
 public class Module
 {
-    // instance variables - replace the example below with your own
+    // instance variables 
     private String code;
     private String title;
     private int credit;
@@ -25,25 +25,34 @@ public class Module
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     *
-     * @param 
-     * @return code
+     * get the code
      */
     public String getCode()
     {
         return this.code;
     }
     
+    
+    /**
+     * give the title
+     */
     public String getTitle()
     {
         return this.title;
     }
     
+    /**
+     * set the credit
+     */
     public int getCredit()
     {
         return this.credit;
     }
+    
+    /**
+     * Print the details of the course, the list
+     * of student enrolled and module
+     */
     public void setCredit(int credit)
     {
         this.credit = credit;
@@ -55,8 +64,6 @@ public class Module
      */
     public void print()
     {
-        //printHeading
-        
         System.out.println(" Module Code: " + code + ": " 
                             + title + " Credit " + credit);
         System.out.println();

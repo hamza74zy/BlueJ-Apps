@@ -9,11 +9,11 @@ import java.util.*;
  */
 public class Course 
 {
-    // A unique identifier e.g. BT1CTG1
+    // a unique identifier e.g BT1CTG1
     private String code;
-    // The full title including qualification and subject
+    // The full title include qualification and subject
     private String title;
-    
+    // the course the student is enrolled on
     private Module module;
     
     /**
@@ -51,6 +51,9 @@ public class Course
         System.out.println();
     }
     
+    /**
+     * Assign the module
+     */
     public void addModule(Module module)
     {
         this.module = module;
