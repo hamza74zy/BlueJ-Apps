@@ -49,7 +49,7 @@ public class Course
     Module co452 = new Module ("CO452", "Programming Concepts");
     Module co453 = new Module ("CO453", "Apps Programming");
     Module co457 = new Module ("CO457", "Business Modellinng");
-    Module co456 = new Module ("CO456", "Web Development");
+    Module co456 = new Module ("CO456", "Web Development" + "\t");
     addModule(co452);
     addModule(co453);
     addModule(co457);
