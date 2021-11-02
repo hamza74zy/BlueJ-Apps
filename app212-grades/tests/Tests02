@@ -1,0 +1,31 @@
+Student amir = new Student();
+Course computing = new Course();
+amir.enrol(computing);
+amir.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by Amir
+ ------------------------------------
+ Student ID: 21911096, Amir
+
+ Course BT1CTG1: BSc Computing
+
+ CO452: Programming Concepts	 15 credits
+ CO453: Apps Programming	 15 credits
+ CO457: Business Modellinng	 15 credits
+ CO456: Web Development		 15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: Programming Concepts	  0	  25	   F
+
+ CO453: Apps Programming	  15	  82	   A
+
+ CO457: Business Modellinng	  15	  45	   D
+
+ CO456: Web Development		  15	  77	   A
+
+
+ Final Course Grade = C
