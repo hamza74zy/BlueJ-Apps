@@ -44,7 +44,7 @@ public class Module
     public void print()
     {
         System.out.println();
-        System.out.print(" " + code + ": " + "\t" + title);
+        System.out.print(" " + code + ": " + title);
     }
     
     /**
@@ -53,6 +53,6 @@ public class Module
      */
     public void printCredit()
     {
-        System.out.print("\t  " + CREDIT + " credits");
+        System.out.print("\t " + CREDIT + " credits");
     }
 }

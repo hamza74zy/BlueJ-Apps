@@ -105,11 +105,10 @@ public class Student
     
     private void printModules()
     {
-        course.printModules();
         for(ModuleMark mark: marks)
         {
             mark.print();
-            System.out.println( "/t" + course.convertToGrade(mark.getValue()));
+            System.out.println("\t"  +  course.convertToGrade(mark.getValue()));
         }
     } 
     

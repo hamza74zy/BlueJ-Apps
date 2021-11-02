@@ -115,7 +115,9 @@ public class Course
         {
             module.print();
             module.printCredit();
+            
         }
+        
         }
     }
 
