@@ -17,7 +17,10 @@ public class Course
     
     private Grades finalGrade;
      
-    public Course()
+    /**
+     * print course
+     */
+     public Course()
     {
         this("BT1CTG1", "BSc Computing");
     }
@@ -53,6 +56,9 @@ public class Course
     addModule(co456);
     }
     
+    /**
+     * allows for quick module adding
+     */
     public void addModule(Module module)
     {
         if(modules.size() < MAXN_MODULES)
@@ -62,7 +68,7 @@ public class Course
     }
     
     /**
-     * 
+     * convert the marks given  into a grade 
      */
     public Grades convertToGrade(int mark)
     {

@@ -18,7 +18,7 @@ public class Student
     private Course course;
     // The marks awarded for the modules on the course
     private ArrayList<ModuleMark> marks;
-    
+    // random mark
     private Random randomMark;
     
     /**
@@ -40,8 +40,11 @@ public class Student
         randomMark = new Random();
         marks = new ArrayList<ModuleMark>();
     }
-
+    /**
+     * add mark
+     */
     public void addMark(ModuleMark mark)
+    
     {
         marks.add(mark);
     }
@@ -107,12 +110,18 @@ public class Student
         System.out.println(" Student ID: " + id + ", " + name);
     }
     
+    /**
+     * print course
+     */
     public void printCourse()
     {
         this.print();
         course.print();
     }
     
+    /**
+     * print the student modules
+     */
     private void printModules()
     {
         for(ModuleMark mark: marks)
@@ -122,11 +131,14 @@ public class Student
         }
     } 
     
+    /**
+     * prints the students transcript
+     */
     public void printTranscript()
     {
         System.out.println(" ------------------------------------");
         System.out.println(" App21-02: Exam Board Transcript 2021");
-        System.out.println("        by student name");
+        System.out.println("        by Amir");
         System.out.println(" ------------------------------------");
         
         printCourse();

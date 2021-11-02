@@ -25,12 +25,18 @@ public class Module
     }
 
    
+    /**
+     * get the module code
+     */
     public String getCode()
     {
         return code;
     }
     
     
+    /**
+     * get the module title 
+     */
     public String getTitle()
     {
         return title;
