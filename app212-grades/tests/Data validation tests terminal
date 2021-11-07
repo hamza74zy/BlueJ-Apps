@@ -1,0 +1,65 @@
+Student amir = new Student();
+amir.print();
+ Student ID: 21911096, Amir
+Course computing = new Course();
+amir.enrol(computing);
+amir.printCourse();
+ Student ID: 21911096, Amir
+
+ Course BT1CTG1: BSc Computing
+
+ CO452: Programming Concepts	 15 credits
+ CO453: Apps Programming	 15 credits
+ CO457: Business Modellinng	 15 credits
+ CO456: Web Development		 15 creditsamir.printTranscript();
+ ------------------------------------
+ App21-02: Exam Board Transcript 2021
+        by Amir
+ ------------------------------------
+ Student ID: 21911096, Amir
+
+ Course BT1CTG1: BSc Computing
+
+ CO452: Programming Concepts	 15 credits
+ CO453: Apps Programming	 15 credits
+ CO457: Business Modellinng	 15 credits
+ CO456: Web Development		 15 credits
+
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+ Code 	 Module 		Credit	 Mark 	 Grade
+ ---- 	 -------------------- 	 ------	 ---- 	 -----
+
+ CO452: Programming Concepts	  15	  58	   C
+
+ CO453: Apps Programming	  0	  31	   F
+
+ CO457: Business Modellinng	  0	  28	   F
+
+ CO456: Web Development		  15	  47	   D
+
+
+ Final Course Grade = D
+Module co454 = new Module("CO454", "Digital Technolies");
+Student Amir = new Student();
+computing.printModules();
+
+ CO452: Programming Concepts	 15 credits
+ CO453: Apps Programming	 15 credits
+ CO457: Business Modellinng	 15 credits
+ CO456: Web Development		 15 creditsCourse computing = new Course();
+Module co452 = new Module("CO452", "Programming Concepts");
+Module co453 = new Module("CO453", "Apps Programming");
+Module co457 = new Module("CO457", "Business Modellinng");
+Module co456 = new Module("CO456", "Web Development");
+Module co454 = new Module("co454", "Digital Technolies");
+computing.addModule(co452);
+computing.addModule(co453);
+computing.addModule(co457);
+computing.addModule(co456);
+computing.addModule(co454);
+computing.printModules();
+
+ CO452: Programming Concepts	 15 credits
+ CO453: Apps Programming	 15 credits
+ CO457: Business Modellinng	 15 credits
+ CO456: Web Development		 15 credits
