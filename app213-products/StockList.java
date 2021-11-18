@@ -46,6 +46,15 @@ public class StockList
      */
     public void buyProduct(int productID, int amount)
     {
+        Product product = findProduct(productID);
+        if(product != null)
+        {
+            product.increaseQuantity(amount);
+        }
+        else
+        {
+            System.out.println("Couldn`t find product");
+        }
     }
     
     /**
@@ -54,6 +63,11 @@ public class StockList
      */
     public Product findProduct(int productID)
     {
+        for(Product product : stock)
+        {
+            if(product.getID() == productID)
+                return product;
+        }
         return null;
     }
     
@@ -72,17 +86,17 @@ public class StockList
             if(product.getQuantity() > 0)
             {
                 product.decreaseQuantity(1);
-                
-                // printout message
+                System.out.println("Sold one of " + product.getName());
             }
             else
             {
-                // printout message
+                System.out.println("The product " + product.getName() + " is out of stock");
+                
             }
         }
         else
         {
-            // printout message
+            System.out.println("Coulden`t find product");
         }
     }    
 
