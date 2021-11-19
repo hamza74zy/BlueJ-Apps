@@ -68,7 +68,7 @@ public class StockDemo
         stock.buyProduct(106, 250);
         stock.buyProduct(107, 350);
         stock.buyProduct(108, 500);
-        stock.buyProduct(109, 100);
+        stock.buyProduct(109, 0);
         stock.buyProduct(110, 150);
     }
 
