@@ -1,0 +1,66 @@
+StockDemo amirstockDemo = new StockDemo();
+
+ Amir's Stock List
+ ====================
+
+ ID 101: Samsung Galaxy S20 stock level: 0
+ ID 102: Apple iPhone 12 stock level: 0
+ ID 103: Google Pixel 4A stock level: 0
+ ID 104: Apple iPhone 13 stock level: 0
+ ID 105: Apple iPhone 13 Pro stock level: 0
+ ID 106: Apple iPhone 13 Pro Max stock level: 0
+ ID 107: Samsung Galaxy Note 20 stock level: 0
+ ID 108: Samsung Galaxy Note 20 Ultra stock level: 0
+ ID 109: Nokia 850 stock level: 0
+ ID 110: Nokia 1100 stock level: 0
+
+Bought 500 of Samsung Galaxy S20
+Bought 300 of Apple iPhone 12
+Bought 400 of Google Pixel 4A
+Bought 200 of Apple iPhone 13
+Bought 300 of Apple iPhone 13 Pro
+Bought 250 of Apple iPhone 13 Pro Max
+Bought 350 of Samsung Galaxy Note 20
+Bought 500 of Samsung Galaxy Note 20 Ultra
+Bought 100 of Nokia 850
+Bought 150 of Nokia 1100
+
+ Amir's Stock List
+ ====================
+
+ ID 101: Samsung Galaxy S20 stock level: 500
+ ID 102: Apple iPhone 12 stock level: 300
+ ID 103: Google Pixel 4A stock level: 400
+ ID 104: Apple iPhone 13 stock level: 200
+ ID 105: Apple iPhone 13 Pro stock level: 300
+ ID 106: Apple iPhone 13 Pro Max stock level: 250
+ ID 107: Samsung Galaxy Note 20 stock level: 350
+ ID 108: Samsung Galaxy Note 20 Ultra stock level: 500
+ ID 109: Nokia 850 stock level: 100
+ ID 110: Nokia 1100 stock level: 150
+
+Sold 250 of Samsung Galaxy S20
+Sold 100 of Apple iPhone 12
+Sold 350 of Google Pixel 4A
+Sold 50 of Apple iPhone 13
+Can`t sell 400 of Apple iPhone 13 Pro becouse only have 300
+Sold 200 of Apple iPhone 13 Pro Max
+Sold 100 of Samsung Galaxy Note 20
+Sold 300 of Samsung Galaxy Note 20 Ultra
+Sold 25 of Nokia 850
+Can`t sell 200 of Nokia 1100 becouse only have 150
+
+ Amir's Stock List
+ ====================
+
+ ID 101: Samsung Galaxy S20 stock level: 250
+ ID 102: Apple iPhone 12 stock level: 200
+ ID 103: Google Pixel 4A stock level: 50
+ ID 104: Apple iPhone 13 stock level: 150
+ ID 105: Apple iPhone 13 Pro stock level: 300
+ ID 106: Apple iPhone 13 Pro Max stock level: 50
+ ID 107: Samsung Galaxy Note 20 stock level: 250
+ ID 108: Samsung Galaxy Note 20 Ultra stock level: 200
+ ID 109: Nokia 850 stock level: 75
+ ID 110: Nokia 1100 stock level: 150
+
