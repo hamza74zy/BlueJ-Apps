@@ -59,6 +59,9 @@ public class StockDemo
         
     }
     
+    /**
+     * Buy Products
+     */
     private void buyProducts()
     {
         stock.buyProduct(101, 500);
@@ -73,6 +76,9 @@ public class StockDemo
         stock.buyProduct(110, 150);
     }
 
+    /**
+     * Sell Products
+     */
     private void sellProducts()
     {
         stock.sellProduct(101, 250);

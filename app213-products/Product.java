@@ -51,16 +51,25 @@ public class Product
         return quantity;
     }
 
+    /**
+     * Set Quantity
+     */
     public void setQuantity(int quantity)
     {
         this.quantity = quantity;
     }
     
+    /**
+     * Increase Quantity
+     */
     public void increaseQuantity(int amount)
     {
         quantity = quantity + amount;
     }
     
+    /**
+     * Decrease Quantity
+     */
     public void decreaseQuantity(int amount)
     {
         if(quantity >= amount)
@@ -76,6 +85,9 @@ public class Product
     }
 
     
+    /**
+     * to print
+     */
     public void print()
     {
         System.out.println(toString());
