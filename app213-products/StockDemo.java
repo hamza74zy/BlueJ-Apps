@@ -55,7 +55,8 @@ public class StockDemo
         stock.print();        
 
         sellProducts();
-        stock.print();        
+        stock.print(); 
+        
     }
     
     private void buyProducts()
@@ -84,5 +85,6 @@ public class StockDemo
         stock.sellProduct(108, 300);
         stock.sellProduct(109, 25);
         stock.sellProduct(110, 200);
-    }    
+    }   
+    
 }
