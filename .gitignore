@@ -21,3 +21,27 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+app213-products/package.bluej
+app213-products/Product.java
+app213-products/StockDemo.java
+app213-products/StockList.java
+app214-stock/.idea/description.html
+app214-stock/.idea/encodings.xml
+app214-stock/.idea/misc.xml
+app214-stock/.idea/modules.xml
+app214-stock/.idea/project-template.xml
+app214-stock/.idea/runConfigurations.xml
+app214-stock/.idea/vcs.xml
+app214-stock/.idea/workspace.xml
+app214-stock/app214-stock.iml
+app214-stock/InputReader.java
+app214-stock/Program.java
+app214-stock/src/com/company/Main.java
+app214-stock/StockApp.java
+app213-products/package.bluej
+app213-products/Product.java
+app213-products/StockDemo.java
+app213-products/StockList.java
+app214-stock/InputReader.java
+app214-stock/Program.java
+app214-stock/StockApp.java
