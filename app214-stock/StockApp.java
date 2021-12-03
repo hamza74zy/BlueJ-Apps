@@ -4,14 +4,14 @@
  * stock manager so that users can add, edit,
  * print and remove stock products
  *
- * @author Student Name
+ * @author Amir
  * @version 0.1
  */
 public class StockApp
 {
     private InputReader reader;
     
-    //private ProductList stock;
+    private StockList stock;
     
     /**
      * Constructor for objects of class StockApp
@@ -20,8 +20,8 @@ public class StockApp
     {
         reader = new InputReader();
         
-        //stock = new ProductList();
-        //StockDemo demo = new StockDemo(stock);
+        stock = new StockList();
+        StockDemo demo = new StockDemo();
     }
 
     /**
@@ -49,9 +49,18 @@ public class StockApp
         {
             return true;
         }
+        else if(choice.equals("add"))
+        {
+            reader.getInt("please enter the ID: ");
+            String name = reader.getString("Please enter the name of the product ");
+            Product product = new Product(101, "Apple iPhone 13 Mini");
+            stock.add(product);
+            System.out.println("Product" + product.getID()
+            + ", " + product.getName() +  "has been Added");
+        }
         else if(choice.equals("print"))
         {
-            //stock.print();
+            stock.print();
         }
         
         return false;

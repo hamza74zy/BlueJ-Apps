@@ -7,7 +7,7 @@ import java.util.Scanner;
  * @author     Michael Kölling and David J. Barnes
  * @version    0.1 (2016.02.29)
  * 
- * Modified by Derek Peacock 13/12/2020
+ * Modified by Amir 03/12/2021
  */
 public class InputReader
 {
@@ -29,6 +29,7 @@ public class InputReader
      */
     public String getString(String prompt)
     {
+        reader = new Scanner(System.in);
         String inputLine = null;
         boolean isValid = false;
         
@@ -54,6 +55,7 @@ public class InputReader
      */
     public int getInt(String prompt)
     {
+        reader = new Scanner(System.in);
         int number = 0;
         boolean isValid = false;
         
