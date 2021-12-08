@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.company</OriginalElement>
+  <nodes>
+    <node x="21.0" y="735.0">com.company.InputReader</node>
+    <node x="209.99999999999997" y="0.0">com.company.Product</node>
+    <node x="213.0" y="724.0">com.company.StockDemo</node>
+    <node x="240.1746031746032" y="307.0">com.company.StockList</node>
+    <node x="117.00793650793652" y="1232.0">com.company.Main</node>
+    <node x="86.00793650793652" y="907.0">com.company.StockApp</node>
+  </nodes>
+  <notes />
+  <edges />
+  <settings layout="Hierarchic" zoom="0.5033860045146726" showDependencies="true" x="222.0" y="654.5" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
