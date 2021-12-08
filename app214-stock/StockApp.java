@@ -82,11 +82,11 @@ public class StockApp
         {
             runLowstock();
         }
-        else if(choice.equals("re-stock"))
+        else if(choice.equals("restock"))
         {
             runRestock();
         }
-        else if(choice.equals("print"))
+        else if(choice.equals("stock"))
         {
             stockDemo = new StockDemo(stock);
         }
@@ -109,8 +109,8 @@ public class StockApp
         System.out.println("Search(3):     Search for products by what there name starts with, it will give you ID and quantity of product");
         System.out.println("Buy(4):        Buy an existing product by ID(amount between 1 and 10(you pick))");
         System.out.println("Sell(5):       Sell an existing product by ID(amount between 1 and 10(you pick))");
-        System.out.println("Low Stock(6):  Print all products that have low stock(amount between 1 and 5 (you pick)),then have a option if you want to restock the low stock(will buy 10)");
-        System.out.println("Re-stock(7):   Restock (amount between 1 and 10(you pick)) the products that have lowstock(amount between 1 and 5 (you pick))");
+        System.out.println("LowStock(6):   Print all products that have low stock(amount between 1 and 5 (you pick)),then have a option if you want to restock the low stock(will buy 10)");
+        System.out.println("Restock(7):    Restock (amount between 1 and 10(you pick)) the products that have lowstock(amount between 1 and 5 (you pick))");
         System.out.println("Print(8):      Print all the products, this will show the name, ID and quantity of all products");
         System.out.println("Quit(9):       Quit the program");
         System.out.println();         
