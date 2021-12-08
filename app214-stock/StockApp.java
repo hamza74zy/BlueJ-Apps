@@ -13,8 +13,9 @@ public class StockApp
     
     private StockList stock;
     
+    private StockDemo stockDemo;
     
-    
+
     /**
      * Constructor for objects of class StockApp
      */
@@ -23,7 +24,7 @@ public class StockApp
         reader = new InputReader();
         
         stock = new StockList();
-        StockDemo demo = new StockDemo();
+        //StockDemo demo = new StockDemo();
     }
 
     /**
@@ -48,44 +49,44 @@ public class StockApp
     
     private boolean executeChoice(String choice)
     {
-         if(choice.equals("quit") | choice.equals("q") | choice.equals("9"))
+         if(choice.equals("quit"))
         {
             System.out.println("You have quit the app and it did not save");
             return true;
          }
-        else if(choice.equals("add") | choice.equals("a") | choice.equals("1"))
+        else if(choice.equals("add"))
         {runAdd();
         }
-        else if(choice.equals("remove") | choice.equals("rem") | choice.equals("2"))
+        else if(choice.equals("remove"))
         {
             runRemove();
         }
-        else if(choice.equals("print") | choice.equals("p") | choice.equals("8"))
+        else if(choice.equals("print"))
         {
             stock.print();
         }
-        else if(choice.equals("buy") | choice.equals("b") | choice.equals("4"))
+        else if(choice.equals("buy"))
         {   
             runBuy();
         }
-        else if(choice.equals("sell") | choice.equals("5"))
+        else if(choice.equals("sell"))
         {
             runSell();
         }
-        else if(choice.equals("search") | choice.equals("sea") | choice.equals("3"))
+        else if(choice.equals("search"))
         {
             String phrase = reader.getString("Please enter name of Product > ");
             stock.findProducts(phrase);
         }
-        else if(choice.equals("lowstock") | choice.equals("low stock") | choice.equals("l") | choice.equals("6"))
+        else if(choice.equals("lowstock"))
         {
             runLowstock();
         }
-        else if(choice.equals("re-stock") | choice.equals("restock") | choice.equals("res") | choice.equals("7"))
+        else if(choice.equals("re-stock"))
         {
             runRestock();
         }
-        else if(choice.equals("sd") | choice.equals("0"))
+        else if(choice.equals("print"))
         {
             stockDemo = new StockDemo(stock);
         }
@@ -102,7 +103,7 @@ public class StockApp
      */
     private void printMenuChoices()
     {
-         System.out.println();
+        System.out.println();
         System.out.println("Add(1):        Add a new product");
         System.out.println("Remove(2):     Remove an old product");
         System.out.println("Search(3):     Search for products by what there name starts with, it will give you ID and quantity of product");
@@ -131,4 +132,114 @@ public class StockApp
      */
     private void runRestock()
     {
+        int amount = reader.getInt("Please enter the max quanity to show (between 1 and 5)> ");
+        int quantity = reader.getInt("Please enter the amount to buy (between 1 and 10) for each > ");
+        if(1 <= amount && amount <= 5 && 1 <= quantity && quantity <= 10)
+        {
+            stock.reStock(amount,quantity); 
+        }
+         else
+        {
+            System.out.println("Invalid input you will go back to main menu");
+        }
+    }
+     
+    /**
+     * User inputs amount then it prints out all stock with less then amount
+     * Then ask if you want to restock all those stocks (buy 10)
+     */
+    private void runLowstock()
+    {
+        int amount = reader.getInt("Please enter the max quanity to show (between 1 and 5)> ");
+        if(1 <= amount && amount <= 5)
+        {
+            stock.lowStock(amount);
+            String yorn = reader.getString("would you like to restock all of these (buy 10) (Y/N) > ");
+            if(yorn.equals("y"))
+             {
+                stock.reStock(amount,10);
+            }
+            else if(yorn.equals("n"))
+            {
+                System.out.println("You will go back to main menu");
+            }
+            else
+            {
+                System.out.println("Invalid input you will go back to main menu");
+            }
+        }
+         else
+        {
+            System.out.println("Invalid input you will go back to main menu");
+        }
+    }
+    
+     /**
+     * User inputs ID and amount, then the program sells product with given id by amount
+     */
+    private void runSell()
+     {
+        int id = reader.getInt("Please enter ID of product > ");
+        int amount = reader.getInt("Please enter amount of product to sell (between 1 and 10)> ");
+        if(1 <= amount && amount <= 10)
+        {
+            stock.sellProduct(id,amount);
+            System.out.println("you have sold Product with ID " +id+" "+amount+ " times");
+        }
+        else
+        {
+            System.out.println("Invalid input you will go back to main menu");
+        }
+    }
+    
+     /**
+     * User inputs ID and amount, then the program buys product with given id by amount
+     */
+    private void runBuy()
+    {
+        int id = reader.getInt("Please enter ID of product > ");
+        int amount = reader.getInt("Please enter amount of Product to buy (between 1 and 10)> ");
+        if(1 <= amount && amount <= 10)
+        {
+             stock.buyProduct(id,amount);
+            System.out.println("you have brought product with ID " +id+" "+amount+ " times");
+        }
+        else
+        {
+            System.out.println("Invalid input you will go back to main menu");
+        }
+    }
+    
+    /**
+     * User inputs ID and name, then the program adds a product to the list with given ID and name
+     */
+    private void runAdd()
+    {
+        int id = reader.getInt("Please enter ID of product > ");
+        Product find= stock.findProduct(id);
+        if(find == null)
+        {
+            String name = reader.getString("Please enter name of product > ");
+            Product product = new Product(id, name);
+            stock.add(product);
+            System.out.println("Product " +product.getName()+ " with ID " +product.getID()+ " has been added");
+        }
+        else
+        {
+            System.out.println("Sorry this ID has already got a product assigned to it");
+        }
+    }
+    
+    /**
+     * User inputs ID , then the program removes that product from the list with given ID 
+     */
+    private void runRemove()
+    {
+        int id = reader.getInt("Please enter ID of product > ");
+        stock.remove(id);
+    }
 }
+    
+    
+    
+    

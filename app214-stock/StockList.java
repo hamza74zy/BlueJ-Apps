@@ -21,6 +21,25 @@ public class StockList
     }
 
     /**
+     * remove a product from the list.
+     * @param item The product item to be removed.
+     */
+    public void remove(int productID)
+    {
+        Product product = findProduct(productID);
+        if(product != null) 
+        {
+            System.out.println(product + "has been removed");
+            stock.remove(product);
+        }
+        else
+        {
+            System.out.println("No item with that ID exist");
+        }
+    }
+    
+
+    /**
      * Add a product to the list.
      * @param item The product item to be added.
      */
@@ -79,7 +98,56 @@ public class StockList
         }
         return null;
     }
-        /**
+    
+    
+    /**
+     * finds the product that starts with whatever you string you want
+     */
+    
+    public void findProducts(String phrase)
+    {
+        for(Product product : stock)
+        {
+            if(product.getName().startsWith(phrase) == true)
+            {
+                System.out.println(product);
+            }
+        }
+    }
+    
+    /**
+     * prints out stock that has quantity 10 or below
+     */
+    public void lowStock(int amount)
+     {
+        for(Product product : stock)
+        {
+            if(product.getQuantity() <= 10)
+            {
+                System.out.println(product);
+            }
+        }
+    }
+    
+     /**
+     * Buy the quantity of 100 to anyitem that is below 10 and then
+     * prints out stock of that item
+     */
+    public void reStock(int amount, int quantity)
+    {
+        for(Product product : stock)
+        {
+            if(product.getQuantity() <= 10)
+            {
+                int id = product.getID();
+                buyProduct(id,100);
+                System.out.println(product);
+            }
+        }
+    }
+
+    
+    /**
      * Sell one of the given product.
      * Show the before and after status of the product.
      * @param id The ID of the product being sold.
@@ -133,6 +201,11 @@ public class StockList
      */
     public int numberInStock(int productID)
     {
+        Product product = findProduct(productID);
+        if(product != null)
+        {
+            return product.getQuantity();
+        }
         return 0;
     }
 
