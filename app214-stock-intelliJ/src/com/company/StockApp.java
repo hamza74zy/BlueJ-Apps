@@ -38,6 +38,7 @@ public class StockApp
         
         while(!finished)
         {
+            //stockDemo = new StockDemo(stock);
             printHeading();
             printMenuChoices();
             

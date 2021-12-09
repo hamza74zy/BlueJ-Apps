@@ -1,0 +1,191 @@
+ Amir's Stock List
+ ====================
+
+ ID 101: Samsung Galaxy S20 stock level: 0
+ ID 102: Apple iPhone 12 stock level: 0
+ ID 103: Google Pixel 4A stock level: 0
+ ID 104: Apple iPhone 13 stock level: 0
+ ID 105: Apple iPhone 13 Pro stock level: 0
+ ID 106: Apple iPhone 13 Pro Max stock level: 0
+ ID 107: Samsung Galaxy Note 20 stock level: 0
+ ID 108: Samsung Galaxy Note 20 Ultra stock level: 0
+ ID 109: Nokia 850 stock level: 0
+ ID 110: Nokia 1100 stock level: 0
+
+Bought 500 of Samsung Galaxy S20
+Bought 300 of Apple iPhone 12
+Bought 400 of Google Pixel 4A
+Bought 200 of Apple iPhone 13
+Bought 300 of Apple iPhone 13 Pro
+Bought 250 of Apple iPhone 13 Pro Max
+Bought 350 of Samsung Galaxy Note 20
+Bought 500 of Samsung Galaxy Note 20 Ultra
+Bought 0 of Nokia 850
+Bought 150 of Nokia 1100
+
+ Amir's Stock List
+ ====================
+
+ ID 101: Samsung Galaxy S20 stock level: 500
+ ID 102: Apple iPhone 12 stock level: 300
+ ID 103: Google Pixel 4A stock level: 400
+ ID 104: Apple iPhone 13 stock level: 200
+ ID 105: Apple iPhone 13 Pro stock level: 300
+ ID 106: Apple iPhone 13 Pro Max stock level: 250
+ ID 107: Samsung Galaxy Note 20 stock level: 350
+ ID 108: Samsung Galaxy Note 20 Ultra stock level: 500
+ ID 109: Nokia 850 stock level: 0
+ ID 110: Nokia 1100 stock level: 150
+
+Sold 250 of Samsung Galaxy S20
+Sold 100 of Apple iPhone 12
+Sold 350 of Google Pixel 4A
+Sold 50 of Apple iPhone 13
+Can`t sell 400 of Apple iPhone 13 Pro becouse only have 300
+Sold 200 of Apple iPhone 13 Pro Max
+Sold 100 of Samsung Galaxy Note 20
+Sold 300 of Samsung Galaxy Note 20 Ultra
+The product Nokia 850 is out of stock
+Can`t sell 200 of Nokia 1100 becouse only have 150
+
+ Amir's Stock List
+ ====================
+
+ ID 101: Samsung Galaxy S20 stock level: 250
+ ID 102: Apple iPhone 12 stock level: 200
+ ID 103: Google Pixel 4A stock level: 50
+ ID 104: Apple iPhone 13 stock level: 150
+ ID 105: Apple iPhone 13 Pro stock level: 300
+ ID 106: Apple iPhone 13 Pro Max stock level: 50
+ ID 107: Samsung Galaxy Note 20 stock level: 250
+ ID 108: Samsung Galaxy Note 20 Ultra stock level: 200
+ ID 109: Nokia 850 stock level: 0
+ ID 110: Nokia 1100 stock level: 150
+
+********************************
+  App21-04: Stock Application 
+      by Amir 
+********************************
+
+Add(1):        Add a new product
+Remove(2):     Remove an old product
+Search(3):     Search for products by what there name starts with, it will give you ID and quantity of product
+Buy(4):        Buy an existing product by ID(amount between 1 and 10(you pick))
+Sell(5):       Sell an existing product by ID(amount between 1 and 10(you pick))
+LowStock(6):   Print all products that have low stock(amount between 1 and 5 (you pick)),then have a option if you want to restock the low stock(will buy 10)
+Restock(7):    Restock (amount between 1 and 10(you pick)) the products that have lowstock(amount between 1 and 5 (you pick))
+Print(8):      Print all the products, this will show the name, ID and quantity of all products
+Quit(9):       Quit the program
+
+Please enter your choice > add
+Please enter ID of product > 
+201
+Please enter name of product > iPhone 15 Pro
+Product iPhone 15 Pro with ID 201 has been added
+********************************
+  App21-04: Stock Application 
+      by Amir 
+********************************
+
+Add(1):        Add a new product
+Remove(2):     Remove an old product
+Search(3):     Search for products by what there name starts with, it will give you ID and quantity of product
+Buy(4):        Buy an existing product by ID(amount between 1 and 10(you pick))
+Sell(5):       Sell an existing product by ID(amount between 1 and 10(you pick))
+LowStock(6):   Print all products that have low stock(amount between 1 and 5 (you pick)),then have a option if you want to restock the low stock(will buy 10)
+Restock(7):    Restock (amount between 1 and 10(you pick)) the products that have lowstock(amount between 1 and 5 (you pick))
+Print(8):      Print all the products, this will show the name, ID and quantity of all products
+Quit(9):       Quit the program
+
+Please enter your choice > add
+Please enter ID of product > 
+101
+Sorry this ID has already got a product assigned to it
+********************************
+  App21-04: Stock Application 
+      by Amir 
+********************************
+
+Add(1):        Add a new product
+Remove(2):     Remove an old product
+Search(3):     Search for products by what there name starts with, it will give you ID and quantity of product
+Buy(4):        Buy an existing product by ID(amount between 1 and 10(you pick))
+Sell(5):       Sell an existing product by ID(amount between 1 and 10(you pick))
+LowStock(6):   Print all products that have low stock(amount between 1 and 5 (you pick)),then have a option if you want to restock the low stock(will buy 10)
+Restock(7):    Restock (amount between 1 and 10(you pick)) the products that have lowstock(amount between 1 and 5 (you pick))
+Print(8):      Print all the products, this will show the name, ID and quantity of all products
+Quit(9):       Quit the program
+
+Please enter your choice > remove
+Please enter ID of product > 
+200
+No item with that ID exist
+********************************
+  App21-04: Stock Application 
+      by Amir 
+********************************
+
+Add(1):        Add a new product
+Remove(2):     Remove an old product
+Search(3):     Search for products by what there name starts with, it will give you ID and quantity of product
+Buy(4):        Buy an existing product by ID(amount between 1 and 10(you pick))
+Sell(5):       Sell an existing product by ID(amount between 1 and 10(you pick))
+LowStock(6):   Print all products that have low stock(amount between 1 and 5 (you pick)),then have a option if you want to restock the low stock(will buy 10)
+Restock(7):    Restock (amount between 1 and 10(you pick)) the products that have lowstock(amount between 1 and 5 (you pick))
+Print(8):      Print all the products, this will show the name, ID and quantity of all products
+Quit(9):       Quit the program
+
+Please enter your choice > remove
+Please enter ID of product > 
+105
+ ID 105: Apple iPhone 13 Pro stock level: 300has been removed
+********************************
+  App21-04: Stock Application 
+      by Amir 
+********************************
+
+Add(1):        Add a new product
+Remove(2):     Remove an old product
+Search(3):     Search for products by what there name starts with, it will give you ID and quantity of product
+Buy(4):        Buy an existing product by ID(amount between 1 and 10(you pick))
+Sell(5):       Sell an existing product by ID(amount between 1 and 10(you pick))
+LowStock(6):   Print all products that have low stock(amount between 1 and 5 (you pick)),then have a option if you want to restock the low stock(will buy 10)
+Restock(7):    Restock (amount between 1 and 10(you pick)) the products that have lowstock(amount between 1 and 5 (you pick))
+Print(8):      Print all the products, this will show the name, ID and quantity of all products
+Quit(9):       Quit the program
+
+Please enter your choice > print
+
+ Amir's Stock List
+ ====================
+
+ ID 101: Samsung Galaxy S20 stock level: 250
+ ID 102: Apple iPhone 12 stock level: 200
+ ID 103: Google Pixel 4A stock level: 50
+ ID 104: Apple iPhone 13 stock level: 150
+ ID 106: Apple iPhone 13 Pro Max stock level: 50
+ ID 107: Samsung Galaxy Note 20 stock level: 250
+ ID 108: Samsung Galaxy Note 20 Ultra stock level: 200
+ ID 109: Nokia 850 stock level: 0
+ ID 110: Nokia 1100 stock level: 150
+ ID 201: iPhone 15 Pro stock level: 0
+
+********************************
+  App21-04: Stock Application 
+      by Amir 
+********************************
+
+Add(1):        Add a new product
+Remove(2):     Remove an old product
+Search(3):     Search for products by what there name starts with, it will give you ID and quantity of product
+Buy(4):        Buy an existing product by ID(amount between 1 and 10(you pick))
+Sell(5):       Sell an existing product by ID(amount between 1 and 10(you pick))
+LowStock(6):   Print all products that have low stock(amount between 1 and 5 (you pick)),then have a option if you want to restock the low stock(will buy 10)
+Restock(7):    Restock (amount between 1 and 10(you pick)) the products that have lowstock(amount between 1 and 5 (you pick))
+Print(8):      Print all the products, this will show the name, ID and quantity of all products
+Quit(9):       Quit the program
+
+Please enter your choice > quit
+You have quit the app and it did not save
+
+Process finished with exit code 0
